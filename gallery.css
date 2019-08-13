@@ -1,0 +1,172 @@
+/* Reset It */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {display: block;}
+
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none;}
+table {border-collapse: collapse; border-spacing: 0;}
+h1{font-size: 1.5em;}
+
+
+/* Flex styles -------------------------------------------------*/
+header {display: flex; align-items: center;}
+
+@media (min-width: 700px) {
+ .leading {
+    display: flex;
+    align-items: center;
+  }
+}
+
+
+/* Gallery Grid -------------------------------------------------*/
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+
+
+body {font-family: -apple-system, BlinkMacSystemFont, 
+      'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+      'Helvetica Neue', sans-serif;
+
+      background-color: #FCF4F0;
+    
+    }
+
+header {
+  padding: .5em;
+  font-size: 2em;
+  color: #2C2740;
+  background-color: #FCF4F0;
+}
+
+main{}
+
+footer {
+  padding: 2em;
+  font-size: 1.33em;
+  color: white;
+  background-color: #3E403C;
+}
+
+footer p{padding-top: 1em;}
+
+
+.logo {
+  height: 50px;
+  margin-right: 20px;
+}
+
+.leading {
+  min-height: 220px;
+  margin-bottom: 30px;
+  padding: 1em 1em 1em 2em;
+  color: #FCF4F0;
+  background-color: #3E403C;
+  text-shadow: 0px 0px 5px #000;
+  border-bottom: 6px solid #FF3C48;
+  border-top: 2px solid #FF3C48;
+}
+
+.leading-bigtext {
+  margin-right: 60px;
+  font-weight: bold;
+  font-size: 20vw;
+}
+
+.leading a, footer a {
+  background-color: #e34a0f;
+  border-radius: 5px;
+  color:#FCF4F0; 
+  padding:.25em;
+  margin-top:1em;
+  display: inline-block;
+  text-shadow:none;
+  text-decoration: none;
+}
+
+.leading a:hover, footer a:hover {
+  background-color:#7F0000; 
+  color:#FCF4F0;
+}
+
+@media (min-width: 700px) {
+  .leading-bigtext {
+    font-size: 140px;
+  }
+}
+
+.leading-text {
+  max-width: 900px;
+  font-size: 1.95em;
+  line-height: 1.2em;
+  font-weight:strong;
+}
+
+.cards {
+  max-width: 960px;
+  margin: 0 auto 30px;
+}
+
+article {
+  position: relative;
+}
+
+article img:hover{
+  border: 3px solid #e34a0f;
+}
+
+.article-img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 3px solid #FCF4F0;
+}
+
+
+.article-title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #2C2740;
+}
+
+.article-title:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  color:#FCF4F0;
+  font-weight: 700;
+  border-top:2px solid #e34a0f;
+  border-right:2px solid #e34a0f;
+  border-bottom:2px solid #e34a0f;
+}
